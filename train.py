@@ -21,13 +21,14 @@ X = vectorizer.fit_transform(texts)
 label_encoder = LabelEncoder()
 y = label_encoder.fit_transform(labels)
 
+
 # Model (IMPORTANT CHANGE)
 model = LogisticRegression()
 model.fit(X, y)
 
 # Save
 # Save files
-pickle.dump(model, open("model.pkl", "wb"))
+pickle.dump(model, open("new_model.pkl", "wb"))
 pickle.dump(vectorizer, open("vectorizer.pkl", "wb"))
 pickle.dump(label_encoder, open("label_encoder.pkl", "wb"))
 
