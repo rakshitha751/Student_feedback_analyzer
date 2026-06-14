@@ -47,6 +47,7 @@ y = label_encoder.fit_transform(df["sentiment"])
 # -----------------------------
 # Train Model
 # -----------------------------
+from sklearn.svm import SVC
 model = SVC(probability=True)
 model.fit(X, y)
 
