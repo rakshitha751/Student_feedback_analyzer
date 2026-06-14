@@ -7,7 +7,7 @@ import pickle
 model = pickle.load(open("model.pkl", "rb"))
 vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
 label_encoder = pickle.load(open("label_encoder.pkl", "rb"))
-
+st.write(model)
 # -----------------------------
 # Page UI
 # -----------------------------
